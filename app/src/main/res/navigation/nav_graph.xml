@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.passportroom.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_splashFragment"
+            app:destination="@id/splashFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.passportroom.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+    <fragment
+        android:id="@+id/passportsFragment"
+        android:name="com.example.passportroom.PassportsFragment"
+        android:label="fragment_passports"
+        tools:layout="@layout/fragment_passports" >
+        <action
+            android:id="@+id/action_passportsFragment_to_aboutFragment2"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_passportsFragment_to_editFragment2"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.passportroom.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.passportroom.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.passportroom.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_passportsFragment"
+            app:destination="@id/passportsFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+</navigation>

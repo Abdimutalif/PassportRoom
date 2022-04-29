@@ -1,0 +1,2 @@
+rootProject.name = "PassportRoom"
+include ':app'

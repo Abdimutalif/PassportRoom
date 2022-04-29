@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SplashFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/list_btn"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#52CA6C"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <TextView
+            android:text="Barcha fuqarolar"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardBackgroundColor="#52CA6C"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Fuqaroga pasport berish"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
